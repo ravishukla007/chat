@@ -16,10 +16,10 @@ var app = require('http')
 var chat = require('chat')(app);
 
 chat.init({
-  host     : 'localhost',
-  user     : 'user',
-  password : 'password',
-  database : 'database'
+  host     : 'localhost', // DB host
+  user     : 'user', // DB User
+  password : 'password', // DB Password
+  database : 'database' // DB Name
 });
 
 ```
