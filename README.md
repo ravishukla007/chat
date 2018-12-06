@@ -1,11 +1,18 @@
 
- 5 Min setup for chat
+## Getting started ##
+
+### Get a copy of the plugin ###
+
+You can fork or download the plugin from GitHub, or you can install it through npm.
  
- ```js
+```js
 $ npm install rs-chat
 ```
 
- ```js
+### Setup for nodejs ###
+
+```js
+var app = require('http')
 var chat = require('chat')(app);
 
 chat.init({
@@ -17,7 +24,9 @@ chat.init({
 
 ```
 
- ```js
+### Create table ### 
+
+```js
 CREATE TABLE `messages` (
   `id` int(11) NOT NULL,
   `userId` int(11) NOT NULL,
@@ -30,26 +39,36 @@ CREATE TABLE `messages` (
 ```
 
 
+### Load the required files ### 
 
- ```js
- <link rel="stylesheet" type="text/css" href="static/css/rs-chat.min.css">
-	<script type="text/javascript" src="static/js/socket.io.js"></script>
+Inside the page's head tag include the CSS file.
+
+```js
+<link rel="stylesheet" type="text/css" href="static/css/rs-chat.min.css">
+```
+
+In the page's footer, just before </body>, include the required JavaScript files.
+
+```js
+<link rel="stylesheet" type="text/css" href="static/css/rs-chat.min.css">	<script type="text/javascript" src="static/js/socket.io.js"></script>
 
 ```
 
+### Instantiate the chat plugin ### 
 
- ```js
-
-RSChat.init({
-  userId: '1', // logged in user id
-  name: 'ravi shukla', // logged in user name
-});
-
+```js
+<script type="text/javascript">
+  RSChat.init({
+    userId: '1', // logged in user id
+    name: 'ravi shukla', // logged in user name
+  });
+</script>
 ```
 
 
-Open chat box
- ```js
+### Call the below function to open chat box ### 
+
+```js
 RSChat.start('user_id', 'username')
 ```
 
