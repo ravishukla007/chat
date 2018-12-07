@@ -3,7 +3,7 @@
 
 ### Get a copy of the plugin ###
 
-You can fork or download the plugin from GitHub, or you can install it through npm.
+You can install it through npm.
  
 ```js
 $ npm install rs-chat
