@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RS Chat</title>
-	<link rel="stylesheet" type="text/css" href="static/css/rs-chat.min.css">
-	<script type="text/javascript" src="static/js/socket.io.js"></script>
+  <title>Ravi shukla: Chat</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="socket.js"></script>      
 </head>
 <body>
-<script type="text/javascript" src="static/js/rs-chat.min.js"></script>
+<div class="chatlist">
+  <div class="ltstChat"  style="cursor: pointer;" 
+    onclick="RSChat.start('2', 'Manju Shukla')">
+    <div class="chatProfilePic">
+      <img src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg" height="50">
+    </div>
+    <div class="chatListDtl">
+      <b>Manju Shukla</b><br>
+      <small>Lorem ipsum dolor sit amet</small>
+    </div>
+  </div>
+    
+</div>
+
+<script type="text/javascript" src="chat.min.js"></script>
 
 <script type="text/javascript">
 
 RSChat.init({
-  userId: '1', // logged in user id
-  name: 'ravi shukla', // logged in user name
+  socketUrl: 'http://localhost:8080/',
+  userId: '1',
+  name: 'Ravi shukla'
 });
 
 </script>
-
 </body>
 </html>
+
+
