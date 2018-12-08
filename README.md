@@ -44,10 +44,6 @@ CREATE TABLE `messages` (
 
 ```
 
-## Download js library ##
-
-Download the js library from the github <a href="https://github.com/ravishukla007/chat" >https://github.com/ravishukla007/chat</a>
-
 ### Load the required files ### 
 
 Inside the page's head tag include the CSS file.
