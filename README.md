@@ -58,7 +58,7 @@ In the page's footer, just before </body>, include the required JavaScript files
 ```js
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
 
-<link rel="stylesheet" type="text/css" href="static/js/rs-chat.min.js">
+<script type="text/javascript" href="static/js/rs-chat.min.js"></script>
 
 ```
 
