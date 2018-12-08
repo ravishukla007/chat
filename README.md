@@ -1,7 +1,7 @@
 
-## Demo Image ##
+## Demo Gif Image ##
 
-![alt text](https://drive.google.com/uc?export=view&id=148aArRyQoN4Jg6-HpXCs6pEwL67H-mAu)
+![Demo Gif](https://drive.google.com/uc?export=view&id=148aArRyQoN4Jg6-HpXCs6pEwL67H-mAu)
 
 ## Getting started ##
 
@@ -14,6 +14,8 @@ $ npm install rs-chat
 ```
 
 ### Setup for nodejs ###
+
+Open index.js file and put the below code and start nodejs server
 
 ```js
 var app = require('http')
@@ -77,6 +79,4 @@ In the page's footer, just before </body>, include the required JavaScript files
 ```js
 RSChat.start('user_id', 'username')
 ```
-
-
 
