@@ -53,7 +53,7 @@ Inside the page's head tag include the CSS file.
 <link rel="stylesheet" type="text/css" href="static/css/rs-chat.min.css">
 ```
 
-In the page's footer, just before </body>, include the required JavaScript files.
+In the page's footer, just before &lt;/body&gt;, include the required JavaScript files.
 
 ```js
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
