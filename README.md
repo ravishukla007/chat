@@ -1,4 +1,8 @@
 
+## Demo Image ##
+
+![alt text](https://drive.google.com/uc?export=view&id=148aArRyQoN4Jg6-HpXCs6pEwL67H-mAu)
+
 ## Getting started ##
 
 ### Get a copy of the plugin ###
@@ -50,7 +54,9 @@ Inside the page's head tag include the CSS file.
 In the page's footer, just before </body>, include the required JavaScript files.
 
 ```js
-<link rel="stylesheet" type="text/css" href="static/css/rs-chat.min.css">	<script type="text/javascript" src="static/js/socket.io.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+
+<link rel="stylesheet" type="text/css" href="static/js/rs-chat.min.js">
 
 ```
 
