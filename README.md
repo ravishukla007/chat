@@ -80,3 +80,13 @@ In the page's footer, just before </body>, include the required JavaScript files
 RSChat.start('user_id', 'username')
 ```
 
+### Support ###
+
+If you found a bug please submit it in the Issues.
+
+If you need help with implementing the chat in your project, You can mail me at ravishkl5@gmail.com
+
+### Suggestion ###
+
+If you have any suggestion, You can write mail to me at ravishkl5@gmail.com
+
