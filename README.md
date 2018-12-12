@@ -3,6 +3,10 @@
 
 ![Demo Gif](https://drive.google.com/uc?export=view&id=148aArRyQoN4Jg6-HpXCs6pEwL67H-mAu)
 
+## Youtueb Instalation Guide ##
+
+[![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
+
 ## Getting started ##
 
 ### Get a copy of the plugin ###
