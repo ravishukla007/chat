@@ -3,9 +3,9 @@
 
 ![Demo Gif](https://drive.google.com/uc?export=view&id=148aArRyQoN4Jg6-HpXCs6pEwL67H-mAu)
 
-## Youtueb Instalation Guide ##
+## Youtube Instalation Guide ##
 
-[![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
+[![Youtube Instalation Guide](http://img.youtube.com/vi/TGWlZkFIuV8/0.jpg)](https://www.youtube.com/watch?v=TGWlZkFIuV8 "Youtube Instalation Guide")
 
 ## Getting started ##
 
