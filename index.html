@@ -2,15 +2,14 @@
 <html>
 <head>
   <title>Ravi shukla: Chat</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script type="text/javascript" src="socket.js"></script>      
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@1.0.4/dist/rs-chat.min.css">
 </head>
 <body>
 <div class="chatlist">
   <div class="ltstChat"  style="cursor: pointer;" 
     onclick="RSChat.start('2', 'Manju Shukla')">
     <div class="chatProfilePic">
-      <img src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg" height="50">
+      <img src="static/img/31.jpg" height="50">
     </div>
     <div class="chatListDtl">
       <b>Manju Shukla</b><br>
@@ -20,15 +19,21 @@
     
 </div>
 
-<script type="text/javascript" src="chat.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/rs-chat@1.0.4/dist/rs-chat.min.js"></script>
 
 <script type="text/javascript">
 
 RSChat.init({
   socketUrl: 'http://localhost:8080/',
   userId: '1',
-  name: 'Ravi shukla'
+  name: 'Ravi shukla',
+  beforeDialogOpen: function(resolve, reject){
+    resolve(true);
+  }
 });
+
 
 </script>
 </body>
