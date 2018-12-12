@@ -49,15 +49,15 @@ CREATE TABLE `messages` (
 Inside the page's head tag include the CSS file.
 
 ```js
-<link rel="stylesheet" type="text/css" href="static/css/rs-chat.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@1.0.5/dist/rs-chat.min.css">
 ```
 
 In the page's footer, just before &lt;/body&gt;, include the required JavaScript files.
 
 ```js
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
 
-<script type="text/javascript" href="static/js/rs-chat.min.js"></script>
+<script type="text/javascript" href="https://unpkg.com/rs-chat@1.0.5/dist/rs-chat.min.js"></script>
 
 ```
 
@@ -66,6 +66,7 @@ In the page's footer, just before &lt;/body&gt;, include the required JavaScript
 ```js
 <script type="text/javascript">
   RSChat.init({
+    socketUrl: 'http://localhost:8080/' // server url,
     userId: '1', // logged in user id
     name: 'ravi shukla', // logged in user name
   });
