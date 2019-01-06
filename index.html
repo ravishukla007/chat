@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ravi shukla: Chat</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script type="text/javascript" src="socket.js"></script>      
+  <title>User 1: Chat</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@1.0.7/dist/rs-chat.min.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131534054-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131534054-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-131534054-1');
-</script>
-
+    gtag('config', 'UA-131534054-1');
+  </script>
 
 </head>
 <body>
-
 <div class="chatlist">
   <div class="ltstChat"  style="cursor: pointer;" 
-    onclick="RSChat.start('2', 'Manju Shukla')">
+    onclick="RSChat.start('2', 'User 2')">
     <div class="chatProfilePic">
-      <img src="31.jpg" height="50">
+      <img src="static/img/31.jpg" height="50">
     </div>
     <div class="chatListDtl">
-      <b>Manju Shukla</b><br>
+      <b>User 2</b><br>
       <small>Lorem ipsum dolor sit amet</small>
     </div>
   </div>
     
 </div>
 
-<script type="text/javascript" src="emoji.js"></script>
-<script type="text/javascript" src="chat.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/rs-chat@1.0.7/dist/rs-chat.min.js"></script>
 
 <script type="text/javascript">
 
 RSChat.init({
   socketUrl: 'http://localhost:8080/',
   userId: '1',
-  name: 'Ravi shukla',
-  beforeDialogOpen: function(resolve, reject){
-    resolve(true);
-  }
+  name: 'Ravi shukla'
 });
+
 
 </script>
 </body>

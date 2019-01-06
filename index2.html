@@ -2,28 +2,12 @@
 <html>
 <head>
   <title>Manju shukla: Chat</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script type="text/javascript" src="socket.js"></script>      
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131534054-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-131534054-1');
-</script>
-
-
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@1.0.7/dist/rs-chat.min.css">
 </head>
 <body>
 <div class="chatlist">
   <div class="ltstChat"  style="cursor: pointer;" 
     onclick="RSChat.start('1', 'Ravi Shukla')">
-    <div class="chatProfilePic">
-      <img src="31.jpg" height="50">
-    </div>
     <div class="chatListDtl">
       <b>Ravi Shukla</b><br>
       <small>Lorem ipsum dolor sit amet</small>
@@ -31,9 +15,6 @@
   </div>
   <div class="ltstChat" style="cursor: pointer;" 
     onclick="RSChat.start('3', 'User 3')">
-    <div class="chatProfilePic">
-      <img src="31.jpg" height="50">
-    </div>
     <div class="chatListDtl">
       <b>User 3</b><br>
       <small>Lorem ipsum dolor sit amet</small>
@@ -41,9 +22,6 @@
   </div>
   <div class="ltstChat" style="cursor: pointer;" 
     onclick="RSChat.start('4', 'User 4')">
-    <div class="chatProfilePic">
-      <img src="31.jpg" height="50">
-    </div>
     <div class="chatListDtl">
       <b>User 4</b><br>
       <small>Lorem ipsum dolor sit amet</small>
@@ -51,9 +29,6 @@
   </div>
   <div class="ltstChat" style="cursor: pointer;" 
     onclick="RSChat.start('5', 'User 5')">
-    <div class="chatProfilePic">
-      <img src="31.jpg" height="50">
-    </div>
     <div class="chatListDtl">
       <b>User 5</b><br>
       <small>Lorem ipsum dolor sit amet</small>
@@ -61,9 +36,6 @@
   </div>
   <div class="ltstChat"  style="cursor: pointer;" 
     onclick="RSChat.start('6', 'User 6')">
-    <div class="chatProfilePic">
-      <img src="31.jpg" height="50">
-    </div>
     <div class="chatListDtl">
       <b>User 6</b><br>
       <small>Lorem ipsum dolor sit amet</small>
@@ -71,9 +43,6 @@
   </div>
   <div class="ltstChat" style="cursor: pointer;" 
     onclick="RSChat.start('7', 'User 7')">
-    <div class="chatProfilePic">
-      <img src="31.jpg" height="50">
-    </div>
     <div class="chatListDtl">
       <b>User 7</b><br>
       <small>Lorem ipsum dolor sit amet</small>
@@ -81,7 +50,10 @@
   </div>
 </div>
 
-<script type="text/javascript" src="chat.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/rs-chat@1.0.7/dist/rs-chat.min.js"></script>
+
 
 <script type="text/javascript">
 
@@ -92,7 +64,6 @@ RSChat.init({
 });
 
 </script>
-
 </body>
 </html>
 
