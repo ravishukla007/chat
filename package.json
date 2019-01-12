@@ -1,6 +1,6 @@
 {
   "name": "chat",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "this is chat plugin ",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "ravi shukla",
   "license": "ISC",
   "dependencies": {
-    "rs-chat": "2.0.2"
+    "rs-chat": "2.0.3"
   }
 }
