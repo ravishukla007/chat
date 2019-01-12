@@ -41,10 +41,12 @@ CREATE TABLE `messages` (
   `id` int(11) NOT NULL,
   `userId` int(11) NOT NULL,
   `toId` int(11) NOT NULL,
-  `msg` text NOT NULL,
+  `msg` mediumtext COLLATE utf8mb4_bin NOT NULL,
+  `type` int(1) UNSIGNED NOT NULL DEFAULT '0' COMMENT '0 / null = text, 1 = image, 2=video',
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `read_at` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
 
 ```
 
@@ -53,7 +55,7 @@ CREATE TABLE `messages` (
 Inside the page's head tag include the CSS file.
 
 ```js
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@1.0.7/dist/rs-chat.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@2.0.1/dist/rs-chat.min.css">
 ```
 
 In the page's footer, just before &lt;/body&gt;, include the required JavaScript files.
@@ -61,7 +63,7 @@ In the page's footer, just before &lt;/body&gt;, include the required JavaScript
 ```js
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
 
-<script type="text/javascript" href="https://unpkg.com/rs-chat@1.0.7/dist/rs-chat.min.js"></script>
+<script type="text/javascript" href="https://unpkg.com/rs-chat@2.0.1/dist/rs-chat.min.js"></script>
 
 ```
 
@@ -84,9 +86,20 @@ In the page's footer, just before &lt;/body&gt;, include the required JavaScript
 RSChat.start('user_id', 'username')
 ```
 
-### Example ###
 
-Online examples: [https://rschatplugin.wordpress.com](https://rschatplugin.wordpress.com)
+## Global Settings
+
+S.No|Options|Type|Purpuse
+---|---|---|---
+1|emoji(optional)|Bool|Enable emoji feature or not
+3|iconSize(optional)|Integer|Emoji size
+2|media(optional)|Bool|Enable / Disable media
+4|assetPath|String|Asset path for the media
+6|supportedFile(optional)|Array|Supported media file
+5|invalidFileMessage(optional)|String|Message on wrong media file
+7|perPage(optional)|Integer|Pagination for the chat list
+8|marginRight(optional)|Integer|Margin for each chat window
+9|beforeDialogOpen(optional)|Promise|Callback before chat box open
 
 
 ### Support ###
