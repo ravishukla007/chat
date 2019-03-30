@@ -9,6 +9,6 @@
   "author": "ravi shukla",
   "license": "ISC",
   "dependencies": {
-    "rs-chat": "2.0.4"
+    "rs-chat": "2.0.6"
   }
 }
