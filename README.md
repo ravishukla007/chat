@@ -34,7 +34,8 @@ chat.init({
   host     : 'localhost', // DB host
   user     : 'user', // DB User
   password : 'password', // DB Password
-  database : 'database' // DB Name
+  database : 'database', // DB Name
+  assets   : 'assets' // assets path
 });
 
 ```
@@ -60,7 +61,7 @@ CREATE TABLE `messages` (
 Inside the page's head tag include the CSS file.
 
 ```js
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@2.0.3/dist/rs-chat.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@2.0.5/dist/rs-chat.min.css">
 ```
 
 In the page's footer, just before &lt;/body&gt;, include the required JavaScript files.
@@ -68,7 +69,7 @@ In the page's footer, just before &lt;/body&gt;, include the required JavaScript
 ```js
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
 
-<script type="text/javascript" href="https://unpkg.com/rs-chat@2.0.3/dist/rs-chat.min.js"></script>
+<script type="text/javascript" href="https://unpkg.com/rs-chat@2.0.5/dist/rs-chat.min.js"></script>
 
 ```
 
@@ -105,6 +106,8 @@ S.No|Options|Type|Purpuse
 7|perPage(optional)|Integer|Pagination for the chat list
 8|marginRight(optional)|Integer|Margin for each chat window
 9|beforeDialogOpen(optional)|Promise|Callback before chat box open
+10|maxFileSize(optional)|Integer|Max file size to upload default 1MB
+11|maxFileSizeError(optional)|String|Error message on big media file
 
 
 ### Support ###
