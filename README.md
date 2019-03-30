@@ -28,7 +28,7 @@ Open index.js file and put the below code and start nodejs server
 
 ```js
 var app = require('http')
-var chat = require('chat')(app);
+var chat = require('rs-chat')(app);
 
 chat.init({
   host     : 'localhost', // DB host
