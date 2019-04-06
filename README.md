@@ -61,7 +61,7 @@ CREATE TABLE `messages` (
 Inside the page's head tag include the CSS file.
 
 ```js
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@2.0.6/dist/rs-chat.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/rs-chat@2.0.7/dist/rs-chat.min.css">
 ```
 
 In the page's footer, just before &lt;/body&gt;, include the required JavaScript files.
@@ -69,7 +69,7 @@ In the page's footer, just before &lt;/body&gt;, include the required JavaScript
 ```js
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
 
-<script type="text/javascript" src="https://unpkg.com/rs-chat@2.0.6/dist/rs-chat.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/rs-chat@2.0.7/dist/rs-chat.min.js"></script>
 
 ```
 
